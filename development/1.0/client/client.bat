@@ -1,9 +1,11 @@
+:SOF
 @ECHO OFF
-TITLE Client Application // NXT Studios
-set rootDirectory=%cd%
-cls
-:STARTOFCLIENT
+TITLE Agent Loading...
 
-:RUNTIMECHECK
-PUSHD %appdata%
-IF 
+set rootDirectory="%cd%"
+
+:BOF
+echo.
+echo Checking filesystems and table setup...
+echo.
+TIMEOUT 3 /NOBREAK >NUL
